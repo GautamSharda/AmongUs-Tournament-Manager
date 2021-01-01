@@ -8,7 +8,7 @@ client.on('ready', () => {
     console.log('The client is ready!')
 
 //Getting the server 
-const Guild = client.guilds.cache.get('775760241711251476')
+const Guild = client.guilds.cache.get('<serverID>')
 //Getting the members in the server
 const Members = Guild.members.cache.map(members => members.nickname) 
 
@@ -25,79 +25,12 @@ for (f = 0; f < arr.length; f++){
 console.log(arr)
 
 for (f = 0; f < arr.length; f++){
-    if (arr[f].includes('Akhil')){
+    if (arr[f].includes('<Nickname>')){
         arr.splice(f,1);
         console.log(arr)
     }
 }
 
-for (f = 0; f < arr.length; f++){
-    if (arr[f].includes('Tikki')){
-        arr.splice(f,1);
-        console.log(arr)
-    }
-}
-
-for (f = 0; f < arr.length; f++){
-    if (arr[f].includes('Gautam Sharda')){
-        arr.splice(f,1);
-        console.log(arr)
-    }
-}
-for (f = 0; f < arr.length; f++){
-    if (arr[f].includes('advikaaa')){
-        arr.splice(f,1);
-        console.log(arr)
-    }
-}
-for (f = 0; f < arr.length; f++){
-    if (arr[f].includes('Grace Huang')){
-        arr.splice(f,1);
-        console.log(arr)
-    }
-}
-for (f = 0; f < arr.length; f++){
-    if (arr[f].includes('zoey guo')){
-        arr.splice(f,1);
-        console.log(arr)
-    }
-}
-for (f = 0; f < arr.length; f++){
-    if (arr[f].includes('Rosemary')){
-        arr.splice(f,1);
-        console.log(arr)
-    }
-}
-for (f = 0; f < arr.length; f++){
-    if (arr[f].includes('Jane Lam')){
-        arr.splice(f,1);
-        console.log(arr)
-    }
-}
-for (f = 0; f < arr.length; f++){
-    if (arr[f].includes('Jayden')){
-        arr.splice(f,1);
-        console.log(arr)
-    }
-}
-for (f = 0; f < arr.length; f++){
-    if (arr[f].includes('Google')){
-        arr.splice(f,1);
-        console.log(arr)
-    }
-}
-for (f = 0; f < arr.length; f++){
-    if (arr[f].includes('Marcos C')){
-        arr.splice(f,1);
-        console.log(arr)
-    }
-}
-//for (f = 0; f < arr.length; f++){
-    //if (arr[f].includes('Kamakshee')){
-      //  arr.splice(f,1);
-        //console.log(arr)
-   // }
-//}
 for (f = 0; f < arr.length; f++){
     if (arr[f].includes('no nickname')){
         arr.splice(f,1);
@@ -232,77 +165,12 @@ client.on('message', message => {
             console.log(TMembers)
 
             for (f = 0; f < TMembers.length; f++){
-                if (TMembers[f].includes('Akhil')){
+                if (TMembers[f].includes('<Nickname>')){
                     TMembers.splice(f,1);
                     console.log(TMembers)
                 }
             }
-            for (f = 0; f < TMembers.length; f++){
-                if (TMembers[f].includes('Tikki')){
-                    TMembers.splice(f,1);
-                    console.log(TMembers)
-                }
-            }
-            for (f = 0; f < TMembers.length; f++){
-                if (TMembers[f].includes('Gautam Sharda')){
-                    TMembers.splice(f,1);
-                    console.log(TMembers)
-                }
-            }
-            for (f = 0; f < TMembers.length; f++){
-                if (TMembers[f].includes('advikaaa')){
-                    TMembers.splice(f,1);
-                    console.log(TMembers)
-                }
-            }
-            for (f = 0; f < TMembers.length; f++){
-                if (TMembers[f].includes('Grace Huang')){
-                    TMembers.splice(f,1);
-                    console.log(TMembers)
-                }
-            }
-            for (f = 0; f < TMembers.length; f++){
-                if (TMembers[f].includes('zoey guo')){
-                    TMembers.splice(f,1);
-                    console.log(TMembers)
-                }
-            }
-            for (f = 0; f < TMembers.length; f++){
-                if (TMembers[f].includes('Rosemary')){
-                    TMembers.splice(f,1);
-                    console.log(TMembers)
-                }
-            }
-            for (f = 0; f < TMembers.length; f++){
-                if (TMembers[f].includes('Jane Lam')){
-                    TMembers.splice(f,1);
-                    console.log(TMembers)
-                }
-            }
-            for (f = 0; f < TMembers.length; f++){
-                if (TMembers[f].includes('Jayden')){
-                    TMembers.splice(f,1);
-                    console.log(TMembers)
-                }
-            }
-            for (f = 0; f < TMembers.length; f++){
-                if (TMembers[f].includes('Google')){
-                    TMembers.splice(f,1);
-                    console.log(TMembers)
-                }
-            }
-            for (f = 0; f < TMembers.length; f++){
-                if (TMembers[f].includes('Marcos C')){
-                    TMembers.splice(f,1);
-                    console.log(TMembers)
-                }
-            }
-            //for (f = 0; f < TMembers.length; f++){
-                //if (TMembers[f].includes('Kamakshee')){
-                 //   TMembers.splice(f,1);
-                   // console.log(TMembers)
-                //}
-            //}
+         
             for (f = 0; f < TMembers.length; f++){
                 if (TMembers[f].includes('no nickname')){
                     TMembers.splice(f,1);
@@ -364,67 +232,13 @@ client.on('message', message => {
             
             //putting mods in respective lobbies + honoring prefs 
             for (f = 0; f < TMembers.length; f++){
-                if(TMembers[f].includes('Bivan')){
+                if(TMembers[f].includes('<Nickname>')){
                     TMembers[f] = `${TMembers[6]}`
                     TMembers[6] = `Bivan`
                 }
             }
-            for (f = 0; f < TMembers.length; f++){
-                if(TMembers[f].includes('Matthew')){
-                    TMembers[f] = `${TMembers[7]}`
-                    TMembers[7] = `Matthew`
-                }
-            }
-            for (f = 0; f < TMembers.length; f++){
-                if(TMembers[f].includes('William Chen')){
-                    TMembers[f] = `${TMembers[10]}`
-                    TMembers[10] = `William Chen`
-                }
-            }
-            for (f = 0; f < TMembers.length; f++){
-                if(TMembers[f].includes('Tyoma Bergal')){
-                    TMembers[f] = `${TMembers[9]}`
-                    TMembers[9] = `Tyoma Bergal`
-                }
-            }
-            for (f = 0; f < TMembers.length; f++){
-                if(TMembers[f].includes('Jem Alden')){
-                    TMembers[f] = `${TMembers[0]}`
-                    TMembers[0] = `Jem Alden`
-                }
-            }
-            for (f = 0; f < TMembers.length; f++){
-                if(TMembers[f].includes('Hayden')){
-                    TMembers[f] = `${TMembers[1]}`
-                    TMembers[1] = `Hayden`
-                }
-            }
-            for (f = 0; f < TMembers.length; f++){
-                if(TMembers[f].includes('Liam')){
-                    TMembers[f] = `${TMembers[2]}`
-                    TMembers[2] = `Liam`
-                }
-            }
-            for (f = 0; f < TMembers.length; f++){
-                if(TMembers[f].includes('Tony')){
-                    TMembers[f] = `${TMembers[3]}`
-                    TMembers[3] = `Tony`
-                }
-            }
-            for (f = 0; f < TMembers.length; f++){
-                if(TMembers[f].includes('Kam')){
-                    TMembers[f] = `${TMembers[4]}`
-                    TMembers[4] = `Kam`
-                }
-            }
-            for (f = 0; f < TMembers.length; f++){
-                if(TMembers[f].includes('Matthew')){
-                    TMembers[f] = `${TMembers[5]}`
-                    TMembers[5] = `Matthew`
-                }
-            }
-            
-            //splitting the array into 3 to generate 3 lobbies (to be changed)
+        
+            //splitting the array into 2 to generate 2 lobbies (can add more)
             const newMembers = TMembers.slice(0,9);
             const newMembers1 = TMembers.slice(9,19);
             //const newMembers2 = TMembers.slice(20,24);
