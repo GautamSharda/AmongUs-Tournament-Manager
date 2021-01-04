@@ -16,7 +16,7 @@ const Members = Guild.members.cache.map(members => members.nickname)
 var arr = Members;
 
 //exclude some people
-var f =0;
+var f;
 for (f = 0; f < arr.length; f++){
     if (arr[f] === null){
         arr[f] = 'no nickname' 
